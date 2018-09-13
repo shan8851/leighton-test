@@ -1,0 +1,16 @@
+.search {
+    display: inline-block;
+    margin: 2%;
+}
+
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When interacted with change width to 30% */
+input[type=text]:focus {
+    width: 30%;
+}
+
