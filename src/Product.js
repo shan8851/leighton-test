@@ -17,6 +17,12 @@ class Product extends Component {
                         <div className="productMid">
                             <h4>Brand: Brand</h4>
                             <h4>Colour: Red</h4>
+                            <div className="f5 b">
+                                Size:
+                                <a class="f6 link dim ph3 pv2 ml3 mb2 dib white bg-light-red" href="#0">S</a>
+                                <a class="f6 link dim ph3 pv2 ml2 mb2 dib white bg-light-red" href="#0">M</a>
+                                <a class="f6 link dim ph3 pv2 ml2 mb2 dib white bg-light-red" href="#0">L</a>
+                            </div>
                             <h5>Description:</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu. Vitae purus faucibus ornare suspendisse sed nisi. Vel eros donec ac odio tempor. Ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus integer feugiat scelerisque varius. </p>
                         <div className="ProductFoot">
