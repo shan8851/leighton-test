@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './Nav.css';
 import 'tachyons';
 
 class Nav extends Component {
