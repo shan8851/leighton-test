@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import './Featured.css';
 import 'tachyons';
 
-class Featured extends Component {
+class Product extends Component {
     render() {
         return (
             <div className="pb4">
-                <div className="bg-gray white w-80 pa2 center">Featured Product</div>
                     <div className="flexContainer">
                         <div className="flexItem1">
                             <a href="https://placeholder.com"><img src="https://via.placeholder.com/250x350"/></a>
@@ -33,4 +32,4 @@ class Featured extends Component {
     }
 }
 
-export default Featured;
+export default Product;

@@ -5,6 +5,7 @@ import Header from './Header';
 import Cat from './Cat';
 import Search from './Search';
 import Featured from './Featured';
+import Product from './Product';
 import Footer from './Footer';
 
 class App extends Component {
@@ -16,6 +17,10 @@ class App extends Component {
             <Cat />
             <Search />
             <Featured />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
             <Footer />
         </div>
         );
