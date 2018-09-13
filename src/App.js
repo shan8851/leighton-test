@@ -4,6 +4,7 @@ import Nav from './Nav';
 import Header from './Header';
 import Cat from './Cat';
 import Search from './Search';
+import Featured from './Featured';
 
 class App extends Component {
     render() {
@@ -13,6 +14,7 @@ class App extends Component {
             <Header />
             <Cat />
             <Search />
+            <Featured />
         </div>
         );
     }
