@@ -4,16 +4,14 @@ import './Cat.css';
 class Cat extends Component {
     render() {
         return (
-            <div className="cat">
-                <ul>
-                    <li><a href="default.asp">Shop home</a></li>
-                    <li><a href="news.asp">Male<img src="drop.svg" height="8" width="8"></img></a></li>
-                    <li><a href="contact.asp">Female</a></li>
-                    <li><a href="about.asp">Kids</a></li>
-                    <li><a href="about.asp">Sale</a></li>
-                    <li><a href="about.asp">Coming Soon</a></li>
-                </ul>
-            </div>
+                <div class="tc mw-100 center bb">
+                <a class="f6 f5-l link bg-animate black-80 hover-bg-light-red dib pa4 ph5-l" href="/">Shop Home</a>
+                <a class="f6 f5-l link bg-animate black-80 hover-bg-light-red dib pa4 ph5-l" href="/portfolio">Male</a>
+                <a class="f6 f5-l link bg-animate black-80 hover-bg-light-red dib pa4 ph5-l" href="/shop">Female</a>
+                <a class="f6 f5-l link bg-animate black-80 hover-bg-light-red dib pa4 ph5-l" href="/about">Kids</a>
+                <a class="f6 f5-l link bg-animate black-80 hover-bg-light-red dib pa4 ph5-l" href="/contact">Sale</a>
+                <a class="f6 f5-l link bg-animate black-80 hover-bg-light-red dib pa4 ph5-l" href="/contact">Coming Soon</a>
+              </div>
         );
     }
 }
