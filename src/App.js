@@ -5,6 +5,7 @@ import Header from './Header';
 import Cat from './Cat';
 import Search from './Search';
 import Featured from './Featured';
+import Footer from './Footer';
 
 class App extends Component {
     render() {
@@ -15,6 +16,7 @@ class App extends Component {
             <Cat />
             <Search />
             <Featured />
+            <Footer />
         </div>
         );
     }

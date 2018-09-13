@@ -1,11 +1,11 @@
 .search {
     display: inline-block;
-    margin: 2%;
+    margin-bottom: 4em;
+    margin-left: 4em;
 }
 
 input[type=text] {
     width: 200%;
-    -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
 
