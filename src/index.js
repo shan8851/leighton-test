@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Nav from './Nav';
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import 'tachyons';
+import 'tachyons'
 
-ReactDOM.render(<Nav />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
