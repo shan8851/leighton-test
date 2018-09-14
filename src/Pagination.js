@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import 'tachyons';
 
 class Pagination extends Component {
     render() {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Featured.css';
-import 'tachyons';
 
 
 class Featured extends Component {

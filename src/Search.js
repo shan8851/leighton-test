@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Search.css';
-import 'tachyons'
 
 
 class Search extends Component {

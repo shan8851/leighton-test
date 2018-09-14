@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import 'tachyons';
 import Nav from './Nav';
 import Header from './Header';
 import Cat from './Cat';
