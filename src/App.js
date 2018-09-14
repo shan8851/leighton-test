@@ -6,6 +6,7 @@ import Cat from './Cat';
 import Search from './Search';
 import Featured from './Featured';
 import Product from './Product';
+import Pagination from './Pagination';
 import Footer from './Footer';
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
             <Product />
             <Product />
             <Product />
+            <Pagination />
             <Footer />
         </div>
         );
