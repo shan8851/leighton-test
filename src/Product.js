@@ -11,19 +11,16 @@ class Product extends Component {
   }
 
   componentDidMount() {
-    axios({
-      method: "get",
-      url:
-        "https://27gmrimn45.execute-api.eu-west-2.amazonaws.com/demos/leighton-demo-api",
-      responseType: "json",
-      headers: { "X-Api-Key": "zQo4PPqD862IwDIQRZub8gX4dqjA3aW2DDhI6UF4" },
-      params: { TableName: "products" }
-    }).then(response => {
-      this.state({
-        isLoaded: true,
-        Items: response.data
+    fetch(
+      "https://27gmrimn45.execute-api.eu-west-2.amazonaws.com/demos/leighton-demo-api?x-api-key=zQo4PPqD862IwDIQRZub8gX4dqjA3aW2DDhI6UF4&TableName=products { mode: 'no-cors' }"
+    )
+      .then(res => res.json())
+      .then(json => {
+        this.state({
+          isLoaded: true,
+          Items: json
+        });
       });
-    });
   }
 
   render() {
@@ -37,7 +34,7 @@ class Product extends Component {
           <div className="flexContainer">
             <div className="flexItem1">
               <a href="https://placeholder.com">
-                <img src="https://via.placeholder.com/250x350" />
+                <img src="https://via.placeholder.com/250x350" alt="" />
               </a>
             </div>
             <div className="flexItem2">

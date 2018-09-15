@@ -9,7 +9,7 @@ class Featured extends Component {
         <div className="flexContainer">
           <div className="flexItem1">
             <a href="https://placeholder.com">
-              <img src="https://via.placeholder.com/250x350" />
+              <img src="https://via.placeholder.com/250x350" alt="" />
             </a>
           </div>
           <div className="flexItem2">
