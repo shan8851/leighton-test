@@ -28,6 +28,7 @@ class Product extends Component {
 
   render() {
     let { isLoaded, Items } = this.state;
+    console.log(Items);
 
     if (!isLoaded) {
       return <div> Loading...</div>;
@@ -42,31 +43,27 @@ class Product extends Component {
             </div>
             <div className="flexItem2">
               <div className="productHead">
-                {Items.map(Item => (
-                  <h1 key={Item.productid} className="productTitle">
-                    {Item.name}
-                  </h1>
-                ))}
-                ;<h1 className="productPrice">£65</h1>
+                <h1 className="productTitle">Title</h1>
+                <h1 className="productPrice">£65</h1>
                 <div className="productMid">
                   <h4>Brand: Brand</h4>
                   <h4>Colour: Red</h4>
                   <div className="f5 b">
                     Size:
                     <a
-                      class="f6 link dim ph3 pv2 ml3 mb2 dib white bg-light-red"
+                      className="f6 link dim ph3 pv2 ml3 mb2 dib white bg-light-red"
                       href="#0"
                     >
                       S
                     </a>
                     <a
-                      class="f6 link dim ph3 pv2 ml2 mb2 dib white bg-light-red"
+                      className="f6 link dim ph3 pv2 ml2 mb2 dib white bg-light-red"
                       href="#0"
                     >
                       M
                     </a>
                     <a
-                      class="f6 link dim ph3 pv2 ml2 mb2 dib white bg-light-red"
+                      className="f6 link dim ph3 pv2 ml2 mb2 dib white bg-light-red"
                       href="#0"
                     >
                       L
@@ -83,13 +80,13 @@ class Product extends Component {
                   </p>
                   <div className="ProductFoot">
                     <a
-                      class="f6 link dim ph3 pv2 mb2 dib white bg-light-red"
+                      className="f6 link dim ph3 pv2 mb2 dib white bg-light-red"
                       href="#0"
                     >
                       Add to basket
                     </a>
                     <a
-                      class="f6 link dim ba ph3 pv2 mb2 ml4 dib black"
+                      className="f6 link dim ba ph3 pv2 mb2 ml4 dib black"
                       href="#0"
                     >
                       Save for later
