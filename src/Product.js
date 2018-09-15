@@ -12,7 +12,14 @@ class Product extends Component {
 
   componentDidMount() {
     fetch(
-      "https://27gmrimn45.execute-api.eu-west-2.amazonaws.com/demos/leighton-demo-api?x-api-key=zQo4PPqD862IwDIQRZub8gX4dqjA3aW2DDhI6UF4&TableName=products { mode: 'no-cors' }"
+      "https://27gmrimn45.execute-api.eu-west-2.amazonaws.com/demos/leighton-demo-api?", {
+        method: 'get',
+        headers: new Headers({
+          //Headers here????
+        }), 
+        body: //body here
+      });
+      }
     )
       .then(res => res.json())
       .then(json => {
