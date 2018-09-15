@@ -12,24 +12,28 @@ class Product extends Component {
     }
     
     componentDidMount() {
-        fetch('x-ap-key')
+        fetch('https://27gmrimn45.execute-api.eu-west-2.amazonaws.com/demos/leighton-demo-api?x-api-key=zQo4PPqD862IwDIQRZub8gX4dqjA3aW2DDhI6UF4&TableName=products')
             .then(res => res.json())
             .then(json => {
                 this.state({
                     isLoaded: true,
+                    items: json,
                 })
         });
     }
     
     render() {
-        return (
-            let { isLoaded, items } = this.state;
-            
-            if (!isLoaded) {
-                return <div> Loading...</div>;
-            }
-        
-            else {
+
+        let { isLoaded, items } = this.state;
+
+        if (!isLoaded) {
+            return <div> Loading...</div>;
+        }
+
+         else {
+
+        return (        
+           
             <div className="pb4">
                     <div className="flexContainer">
                         <div className="flexItem1">
@@ -37,7 +41,9 @@ class Product extends Component {
                         </div>
                     <div className="flexItem2">
                         <div className="productHead">
-                            <h1 className="productTitle">TITLE</h1>
+                        {items.map(item => (
+                            <h1 key={item.productid} className="productTitle">{ item.name }</h1>
+                        ))};
                             <h1 className="productPrice">£65</h1>
                         <div className="productMid">
                             <h4>Brand: Brand</h4>
@@ -61,6 +67,7 @@ class Product extends Component {
         </div>
         );
     }
+}
 }
 
 export default Product;
