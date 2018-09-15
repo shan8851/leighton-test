@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Featured.css";
+import axios from "axios";
 
 class Product extends Component {
   constructor(props) {
@@ -11,16 +11,19 @@ class Product extends Component {
   }
 
   componentDidMount() {
-    fetch(
-      "https://27gmrimn45.execute-api.eu-west-2.amazonaws.com/demos/leighton-demo-api?x-api-key=zQo4PPqD862IwDIQRZub8gX4dqjA3aW2DDhI6UF4&TableName=products"
-    )
-      .then(res => res.json())
-      .then(json => {
-        this.state({
-          isLoaded: true,
-          Items: json
-        });
+    axios({
+      method: "get",
+      url:
+        "https://27gmrimn45.execute-api.eu-west-2.amazonaws.com/demos/leighton-demo-api",
+      responseType: "json",
+      headers: { "X-Api-Key": "zQo4PPqD862IwDIQRZub8gX4dqjA3aW2DDhI6UF4" },
+      params: { TableName: "products" }
+    }).then(response => {
+      this.state({
+        isLoaded: true,
+        Items: response.data
       });
+    });
   }
 
   render() {
