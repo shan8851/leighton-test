@@ -11,23 +11,19 @@ class Product extends Component {
   }
 
   componentDidMount() {
-    fetch(
-      "https://27gmrimn45.execute-api.eu-west-2.amazonaws.com/demos/leighton-demo-api?", {
-        method: 'get',
-        headers: new Headers({
-          //Headers here????
-        }), 
-        body: //body here
+    axios({
+      method: "get",
+      url:
+        "https://27gmrimn45.execute-api.eu-west-2.amazonaws.com/demos/leighton-demo-api",
+      responseType: "json",
+      headers: { "X-Api-Key": "zQo4PPqD862IwDIQRZub8gX4dqjA3aW2DDhI6UF4" },
+      params: { TableName: "products" }
+    }).then(response => {
+      this.setState({
+        isLoaded: true,
+        Items: response.data
       });
-      }
-    )
-      .then(res => res.json())
-      .then(json => {
-        this.state({
-          isLoaded: true,
-          Items: json
-        });
-      });
+    });
   }
 
   render() {
