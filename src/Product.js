@@ -2,8 +2,34 @@ import React, { Component } from 'react';
 import './Featured.css';
 
 class Product extends Component {
+    
+    constructor(props) {
+        super(props);
+        this.state = {
+            items: [],
+            isLoaded: false,
+        }
+    }
+    
+    componentDidMount() {
+        fetch('x-ap-key')
+            .then(res => res.json())
+            .then(json => {
+                this.state({
+                    isLoaded: true,
+                })
+        });
+    }
+    
     render() {
         return (
+            let { isLoaded, items } = this.state;
+            
+            if (!isLoaded) {
+                return <div> Loading...</div>;
+            }
+        
+            else {
             <div className="pb4">
                     <div className="flexContainer">
                         <div className="flexItem1">
