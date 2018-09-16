@@ -32,7 +32,8 @@ class Product extends Component {
       item =>
         item.size.small !== 0 || item.size.large !== 0 || item.size.medium !== 0
     );
-    console.log(newArr);
+    let products = newArr.filter(item => item.productid !== "0m8hjmd721");
+    console.log(products);
 
     if (!isLoaded) {
       return <div> Loading...</div>;
@@ -47,7 +48,7 @@ class Product extends Component {
             </div>
             <div className="flexItem2">
               <div className="productHead">
-                {newArr.map(Item => (
+                {products.map(Item => (
                   <h1 key={Item.productid} className="productTitle">
                     {Item.name}
                   </h1>
