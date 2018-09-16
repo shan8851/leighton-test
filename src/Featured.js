@@ -39,69 +39,64 @@ class Featured extends Component {
       return <div> Loading...</div>;
     } else {
       return (
-        <div className="pb4 pt4">
-          <div className="bg-gray white w-80 pa2 center">Featured Product</div>
-          <div className="flexContainer">
-            <div className="flexItem1">
-              <a href="https://placeholder.com">
-                <img src="https://via.placeholder.com/250x350" alt="" />
-              </a>
-            </div>
-            <div className="flexItem2">
-              <div className="productHead">
-                {featured.map(Item => (
+        <div className="">
+          <div className="bg-gray white w-80 pa2 mt4 center">
+            Featured Product
+          </div>
+          {featured.map(Item => (
+            <div className="flexContainer">
+              <div className="flexItem1">
+                <a href="https://placeholder.com">
+                  <img src="https://via.placeholder.com/250x350" alt="" />
+                </a>
+              </div>
+              <div className="flexItem2">
+                <div className="productHead">
                   <h1 key={Item.productid} className="productTitle">
                     {Item.name}
                   </h1>
-                ))}
-                <h1 className="productPrice">£99</h1>
-                <div className="productMid">
-                  {featured.map(Item => (
-                    <h4 key={Item.productid}>Brand: {Item.brand}</h4>
-                  ))}
-                  {featured.map(Item => (
-                    <h4 key={Item.productid}>Colour: {Item.colour}</h4>
-                  ))}
-                  {featured.map(Item => (
-                    <h4 key={Item.productid}>Product ID: {Item.productid}</h4>
-                  ))}
-                  <div className="f5 b">
-                    Size:
-                    <a
-                      className="f6 link dim ph3 pv2 ml3 mb2 dib white bg-light-red"
-                      href="#0"
-                    >
-                      S
-                    </a>
-                    <a
-                      className="f6 link dim ph3 pv2 ml2 mb2 dib white bg-light-red"
-                      href="#0"
-                    >
-                      M
-                    </a>
-                    <a
-                      className="f6 link dim ph3 pv2 ml2 mb2 dib white bg-light-red"
-                      href="#0"
-                    >
-                      L
-                    </a>
-                  </div>
-                  <h5>Description:</h5>
-                  {featured.map(Item => (
-                    <p key={Item.productid}>{Item.description}</p>
-                  ))}
-                  <div className="ProductFoot">
-                    <a
-                      className="f6 link dim ph3 pv2 mb4 dib white bg-light-red"
-                      href="#0"
-                    >
-                      Add to basket
-                    </a>
+                  <h1 className="productPrice">£99</h1>
+                  <div className="productMid">
+                    <h4>Brand: {Item.brand}</h4>
+                    <h4>Colour: {Item.colour}</h4>
+                    <h4>Product ID: {Item.productid}</h4>
+                    <div className="f5 b">
+                      Size:
+                      <a
+                        className="f6 link dim ph3 pv2 ml3 mb2 dib white bg-light-red"
+                        href="#0"
+                      >
+                        S
+                      </a>
+                      <a
+                        className="f6 link dim ph3 pv2 ml2 mb2 dib white bg-light-red"
+                        href="#0"
+                      >
+                        M
+                      </a>
+                      <a
+                        className="f6 link dim ph3 pv2 ml2 mb2 dib white bg-light-red"
+                        href="#0"
+                      >
+                        L
+                      </a>
+                    </div>
+                    <h5>Description:</h5>
+                    <p className="pr3">{Item.description}</p>
+                    <div className="ProductFoot">
+                      <a
+                        className="f6 link dim ph3 pv2 mb4 dib white bg-light-red"
+                        href="#0"
+                      >
+                        Add to basket
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          ))}
+          ;
         </div>
       );
     }
