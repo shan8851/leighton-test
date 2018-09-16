@@ -54,7 +54,7 @@ class Featured extends Component {
                     {Item.name}
                   </h1>
                 ))}
-                <h1 className="productPrice">£65</h1>
+                <h1 className="productPrice">£99</h1>
                 <div className="productMid">
                   {featured.map(Item => (
                     <h4 key={Item.productid}>Brand: {Item.brand}</h4>
@@ -92,16 +92,10 @@ class Featured extends Component {
                   ))}
                   <div className="ProductFoot">
                     <a
-                      className="f6 link dim ph3 pv2 mb2 dib white bg-light-red"
+                      className="f6 link dim ph3 pv2 mb4 dib white bg-light-red"
                       href="#0"
                     >
                       Add to basket
-                    </a>
-                    <a
-                      className="f6 link dim ba ph3 pv2 mb2 ml4 dib black"
-                      href="#0"
-                    >
-                      Save for later
                     </a>
                   </div>
                 </div>

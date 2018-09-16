@@ -1,44 +1,44 @@
 .flexContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: flex-start;
-    border: lightgray 2px solid;
-    margin-left: 10%;
-    margin-right: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  border: lightgray 2px solid;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .flexItem1 {
-    order: 0;
-    flex: 0 1 30%;
-    align-self: auto;
+  order: 0;
+  flex: 0 1 30%;
+  align-self: auto;
 }
 
 .flexItem2 {
-    order: 0;
-    flex: 0 1 70%;
-    align-self: auto;
+  order: 0;
+  flex: 0 1 70%;
+  align-self: auto;
 }
 
 .productHead {
-    display: inline;
+  display: inline;
 }
 
 .productTitle {
-    float: left;
+  float: left;
 }
 
 .productPrice {
-    float: right;
-    margin-right: 2%;
+  float: right;
+  margin-right: 4%;
 }
 
 .productMid {
-    margin-top: 6em;
+  margin-top: 6em;
 }
 
 .productFoot {
-    display: inline;
+  display: inline;
 }

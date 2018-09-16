@@ -47,7 +47,7 @@ class Product extends Component {
       return (
         <div className="pb4">
           {products.map(Item => (
-            <div className="flexContainer">
+            <div className="flexContainer mt4">
               <div className="flexItem1">
                 <a href="https://placeholder.com">
                   <img src="https://via.placeholder.com/250x350" alt="" />
@@ -85,18 +85,14 @@ class Product extends Component {
                       </a>
                     </div>
                     <h5>Description:</h5>
-                    <p>{Item.description}</p>
+                    <p className="pr3">{Item.description}</p>
                     <div className="ProductFoot">
                       <a
-                        className="f6 link dim ph3 pv2 mb2 dib white bg-light-red"
+                        className="f6 link dim ph3 pv2 mb4 dib white bg-light-red"
                         href="#0"
                       >
                         Add to basket
                       </a>
-                      <a
-                        className="f6 link dim ba ph3 pv2 mb2 ml4 dib black"
-                        href="#0"
-                      />
                     </div>
                   </div>
                 </div>
