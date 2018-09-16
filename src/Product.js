@@ -28,10 +28,15 @@ class Product extends Component {
 
   render() {
     let { isLoaded, Items } = this.state;
+
+    // Creating new array with out of stock items removed
+
     let newArr = Items.filter(
       item =>
         item.size.small !== 0 || item.size.large !== 0 || item.size.medium !== 0
     );
+
+    // Removing featured product from array
 
     let products = newArr.filter(item => item.productid !== "0m8hjmd721");
     console.log(products);

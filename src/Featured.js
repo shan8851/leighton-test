@@ -29,6 +29,9 @@ class Featured extends Component {
 
   render() {
     let { isLoaded, Items } = this.state;
+
+    // Grabbing featured product from API data
+
     let featured = Items.filter(item => item.productid === "0m8hjmd721");
     console.log(featured);
 
