@@ -28,7 +28,11 @@ class Product extends Component {
 
   render() {
     let { isLoaded, Items } = this.state;
-    console.log(Items);
+    let newArr = Items.filter(
+      item =>
+        item.size.small !== 0 || item.size.large !== 0 || item.size.medium !== 0
+    );
+    console.log(newArr);
 
     if (!isLoaded) {
       return <div> Loading...</div>;
