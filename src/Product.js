@@ -47,7 +47,7 @@ class Product extends Component {
             </div>
             <div className="flexItem2">
               <div className="productHead">
-                {Items.map(Item => (
+                {newArr.map(Item => (
                   <h1 key={Item.productid} className="productTitle">
                     {Item.name}
                   </h1>
