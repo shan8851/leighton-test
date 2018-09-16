@@ -32,6 +32,7 @@ class Product extends Component {
       item =>
         item.size.small !== 0 || item.size.large !== 0 || item.size.medium !== 0
     );
+
     let products = newArr.filter(item => item.productid !== "0m8hjmd721");
     console.log(products);
 
