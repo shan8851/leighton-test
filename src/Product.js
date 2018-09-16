@@ -61,8 +61,9 @@ class Product extends Component {
                 ))}
                 <h1 className="productPrice">£65</h1>
                 <div className="productMid">
-                  <h4>Brand: Brand</h4>
-                  <h4>Colour: Red</h4>
+                  <h4>Brand:</h4>
+                  <h4>Colour:</h4>
+                  <h4>Product ID:</h4>
                   <div className="f5 b">
                     Size:
                     <a

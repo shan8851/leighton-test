@@ -62,6 +62,9 @@ class Featured extends Component {
                   {featured.map(Item => (
                     <h4 key={Item.productid}>Colour: {Item.colour}</h4>
                   ))}
+                  {featured.map(Item => (
+                    <h4 key={Item.productid}>Product ID: {Item.productid}</h4>
+                  ))}
                   <div className="f5 b">
                     Size:
                     <a
