@@ -18,9 +18,6 @@ class App extends Component {
         <Search />
         <Featured />
         <Product />
-        <Product />
-        <Product />
-        <Product />
         <Pagination />
         <Footer />
       </div>
