@@ -39,7 +39,7 @@ class Featured extends Component {
       return <div> Loading...</div>;
     } else {
       return (
-        <div className="pb4">
+        <div className="pb4 pt4">
           <div className="bg-gray white w-80 pa2 center">Featured Product</div>
           <div className="flexContainer">
             <div className="flexItem1">

@@ -15,7 +15,6 @@ class App extends Component {
         <Nav />
         <Header />
         <Cat />
-        <Search />
         <Featured />
         <Product />
         <Pagination />

@@ -96,9 +96,7 @@ class Product extends Component {
                       <a
                         className="f6 link dim ba ph3 pv2 mb2 ml4 dib black"
                         href="#0"
-                      >
-                        Save for later
-                      </a>
+                      />
                     </div>
                   </div>
                 </div>
