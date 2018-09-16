@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Nav from "./Nav";
 import Header from "./Header";
 import Cat from "./Cat";
-import Search from "./Search";
 import Featured from "./Featured";
 import Product from "./Product";
 import Pagination from "./Pagination";
