@@ -6,7 +6,12 @@ class Search extends Component {
     return (
       <div className="dt w-100 mt4 mb2">
         <div className="dtc w-25 search">
-          <input type="text" name="search" placeholder="Search.." />
+          <input
+            className="mb4 ml4"
+            type="text"
+            name="search"
+            placeholder="Search.."
+          />
         </div>
         <div className="dtc w-75">
           <a

@@ -21,7 +21,7 @@ class Product extends Component {
     }).then(response => {
       this.setState({
         isLoaded: true,
-        Items: response.data
+        Items: response.data.Items
       });
     });
   }
@@ -45,7 +45,7 @@ class Product extends Component {
               <div className="productHead">
                 {Items.map(Item => (
                   <h1 key={Item.productid} className="productTitle">
-                    Title: {Item.name}
+                    {Item.name}
                   </h1>
                 ))}
                 <h1 className="productPrice">£65</h1>
