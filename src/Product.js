@@ -60,9 +60,9 @@ class Product extends Component {
                   </h1>
                   <h1 className="productPrice">£65</h1>
                   <div className="productMid">
-                    <h4>Brand:</h4>
-                    <h4>Colour:</h4>
-                    <h4>Product ID:</h4>
+                    <h4>Brand: {Item.brand}</h4>
+                    <h4>Colour: {Item.colour}</h4>
+                    <h4>Product ID: {Item.productid}</h4>
                     <div className="f5 b">
                       Size:
                       <a
@@ -85,15 +85,7 @@ class Product extends Component {
                       </a>
                     </div>
                     <h5>Description:</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Nunc sed velit dignissim sodales ut eu. Vitae
-                      purus faucibus ornare suspendisse sed nisi. Vel eros donec
-                      ac odio tempor. Ultrices neque ornare aenean euismod
-                      elementum nisi quis eleifend. Tellus integer feugiat
-                      scelerisque varius.{" "}
-                    </p>
+                    <p>{Item.description}</p>
                     <div className="ProductFoot">
                       <a
                         className="f6 link dim ph3 pv2 mb2 dib white bg-light-red"
