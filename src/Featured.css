@@ -12,13 +12,13 @@
 
 .flexItem1 {
   order: 0;
-  flex: 0 1 30%;
+  flex: 0 1 40%;
   align-self: auto;
 }
 
 .flexItem2 {
   order: 0;
-  flex: 0 1 70%;
+  flex: 0 1 60%;
   align-self: auto;
 }
 

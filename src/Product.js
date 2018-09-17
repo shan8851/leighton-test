@@ -50,7 +50,7 @@ class Product extends Component {
               <div className="flexItem1">
                 <a href="https://loremflickr.com">
                   <img
-                    src="https://loremflickr.com/280/420/nike,addidas"
+                    src="https://loremflickr.com/350/420/nike,addidas"
                     alt="{ Item.name }"
                   />
                 </a>
@@ -60,7 +60,7 @@ class Product extends Component {
                   <h3 key={Item.productid} className="productTitle f3">
                     {Item.name}
                   </h3>
-                  <h3 className="productPrice f2">£65</h3>
+                  <h3 className="productPrice f3">£65</h3>
                   <div className="productMid">
                     <h4>Brand: {Item.brand}</h4>
                     <h4>Colour: {Item.colour}</h4>
