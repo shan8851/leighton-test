@@ -50,7 +50,7 @@ class Product extends Component {
               <div className="flexItem1">
                 <a href="https://loremflickr.com">
                   <img
-                    src="https://loremflickr.com/280/420/nike"
+                    src="https://loremflickr.com/280/420/nike,addidas"
                     alt="{ Item.name }"
                   />
                 </a>

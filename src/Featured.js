@@ -47,7 +47,7 @@ class Featured extends Component {
               <div className="flexItem1">
                 <a href="https://loremflickr.com.com">
                   <img
-                    src="https://loremflickr.com/280/420/jeans"
+                    src="https://loremflickr.com/280/420/jeans,shorts"
                     alt="{ Item.name }"
                   />
                 </a>
