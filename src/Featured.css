@@ -34,7 +34,7 @@
 
 .productTitle {
   float: left;
-  margin-left: 2%;
+  margin-left: 3%;
   text-transform: capitalize;
 }
 
@@ -45,11 +45,11 @@
 
 .productMid {
   margin-top: 6em;
-  margin-left: 2%;
+  margin-left: 3%;
 }
 
 .productFoot {
-  margin-left: 2%;
+  margin-left: 3%;
 }
 
 h4 {
