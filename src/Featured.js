@@ -43,7 +43,7 @@ class Featured extends Component {
             Featured Product
           </div>
           {featured.map(Item => (
-            <div className="flexContainer">
+            <div className="flexContainer ba bw2 b--dark-gray">
               <div className="flexItem1">
                 <a href="https://loremflickr.com.com">
                   <img
