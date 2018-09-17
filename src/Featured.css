@@ -13,7 +13,14 @@
 .flexItem1 {
   order: 0;
   flex: 0 1 40%;
-  align-self: auto;
+  align-self: center;
+  margin-left: 2em;
+}
+
+@media only screen and (max-width: 750px) {
+  .flexContainer {
+    display: inline-grid;
+  }
 }
 
 .flexItem2 {
@@ -28,6 +35,7 @@
 
 .productTitle {
   float: left;
+  margin-left: 2%;
   text-transform: capitalize;
 }
 
@@ -38,10 +46,11 @@
 
 .productMid {
   margin-top: 6em;
+  margin-left: 2%;
 }
 
 .productFoot {
-  display: inline;
+  margin-left: 2%;
 }
 
 h4 {
