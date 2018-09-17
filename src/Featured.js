@@ -45,9 +45,9 @@ class Featured extends Component {
           {featured.map(Item => (
             <div className="flexContainer">
               <div className="flexItem1">
-                <a href="https://placeholder.com">
+                <a href="https://loremflickr.com.com">
                   <img
-                    src="https://via.placeholder.com/250x350"
+                    src="https://loremflickr.com/280/420/jeans"
                     alt="{ Item.name }"
                   />
                 </a>

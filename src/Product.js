@@ -48,9 +48,9 @@ class Product extends Component {
           {products.map(Item => (
             <div className="flexContainer mt4">
               <div className="flexItem1">
-                <a href="https://placeholder.com">
+                <a href="https://loremflickr.com">
                   <img
-                    src="https://via.placeholder.com/250x350"
+                    src="https://loremflickr.com/280/420/nike"
                     alt="{ Item.name }"
                   />
                 </a>
