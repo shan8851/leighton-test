@@ -39,11 +39,11 @@ class Featured extends Component {
     } else {
       return (
         <div className="">
-          <div className="bg-dark-gray white w-80 pa2 mt4 center">
+          <div className="bg-gray white w-80 pa2 mt4 center b">
             Featured Product
           </div>
           {featured.map(Item => (
-            <div className="flexContainer ba bw2 b--dark-gray">
+            <div className="flexContainer ba bw2 b--gray">
               <div className="flexItem1">
                 <a href="https://loremflickr.com.com">
                   <img

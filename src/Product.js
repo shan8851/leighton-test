@@ -46,7 +46,7 @@ class Product extends Component {
       return (
         <div className="pb4">
           {products.map(Item => (
-            <div className="flexContainer mt4 ba bw1 b--dark-gray">
+            <div className="flexContainer mt4 ba bw1 b--gray">
               <div className="flexItem1">
                 <a href="https://loremflickr.com">
                   <img
