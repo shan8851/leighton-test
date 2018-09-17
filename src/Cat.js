@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Cat.css";
 
 class Cat extends Component {
   render() {
