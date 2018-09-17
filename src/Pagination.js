@@ -12,15 +12,13 @@ class Pagination extends Component {
           ← Previous
         </a>
         <a
-          className="link ba b--near-black near-black pa2 mr2"
+          className="b bg-light-red near-white ba b--near-black pa2 mr2"
           rel="prev"
           href="/foo?page=1"
         >
           1
         </a>
-        <span className="b bg-light-red near-white ba b--near-black pa2 mr2">
-          2
-        </span>
+        <span className="link ba b--near-black near-black pa2 mr2">2</span>
         <a
           className="link ba b--near-black near-black pa2 mr2"
           rel="next"

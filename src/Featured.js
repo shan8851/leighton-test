@@ -35,7 +35,7 @@ class Featured extends Component {
     let featured = Items.filter(item => item.productid === "0m8hjmd721");
 
     if (!isLoaded) {
-      return <div> Loading...</div>;
+      return <div> </div>;
     } else {
       return (
         <div className="">
