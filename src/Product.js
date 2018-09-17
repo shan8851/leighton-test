@@ -70,7 +70,7 @@ class Product extends Component {
                       {//Check stock
                       Item.size.small !== 0 ? (
                         <a
-                          className="f6 link dim ph3 pv2 ml3 mb2 dib white bg-light-red"
+                          className="f6 link dim ph2 pv2 ml1 mb2 dib white bg-light-red"
                           href="#0"
                         >
                           S
@@ -79,7 +79,7 @@ class Product extends Component {
                       {//Check stock
                       Item.size.medium !== 0 ? (
                         <a
-                          className="f6 link dim ph3 pv2 ml3 mb2 dib white bg-light-red"
+                          className="f6 link dim ph2 pv2 ml2 mb2 dib white bg-light-red"
                           href="#0"
                         >
                           M
@@ -88,7 +88,7 @@ class Product extends Component {
                       {//Check stock
                       Item.size.large !== 0 ? (
                         <a
-                          className="f6 link dim ph3 pv2 ml3 mb2 dib white bg-light-red"
+                          className="f6 link dim ph2 pv2 ml2 mb2 dib white bg-light-red"
                           href="#0"
                         >
                           L
