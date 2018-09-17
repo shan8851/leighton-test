@@ -10,30 +10,35 @@ class Cat extends Component {
         >
           Shop Home
         </a>
+        .
         <a
           className="f6 f5-l link bg-animate black-80 hover-bg-light-red dib pa4 ph5-l"
           href="/portfolio"
         >
           Male
         </a>
+        .
         <a
           className="f6 f5-l link bg-animate black-80 hover-bg-light-red dib pa4 ph5-l"
           href="/shop"
         >
           Female
         </a>
+        .
         <a
           className="f6 f5-l link bg-animate black-80 hover-bg-light-red dib pa4 ph5-l"
           href="/about"
         >
           Kids
         </a>
+        .
         <a
           className="f6 f5-l link bg-animate black-80 hover-bg-light-red dib pa4 ph5-l"
           href="/contact"
         >
           Sale
         </a>
+        .
         <a
           className="f6 f5-l link bg-animate black-80 hover-bg-light-red dib pa4 ph5-l"
           href="/contact"
