@@ -5,7 +5,6 @@
   justify-content: flex-start;
   align-content: stretch;
   align-items: flex-start;
-  border: lightgray 2px solid;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -14,7 +13,7 @@
   order: 0;
   flex: 0 1 40%;
   align-self: center;
-  margin-left: 2em;
+  margin-left: 2%;
 }
 
 @media only screen and (max-width: 750px) {
