@@ -28,6 +28,7 @@
 
 .productTitle {
   float: left;
+  text-transform: capitalize;
 }
 
 .productPrice {
@@ -41,4 +42,8 @@
 
 .productFoot {
   display: inline;
+}
+
+h4 {
+  text-transform: capitalize;
 }

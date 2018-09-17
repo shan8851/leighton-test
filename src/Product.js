@@ -49,15 +49,18 @@ class Product extends Component {
             <div className="flexContainer mt4">
               <div className="flexItem1">
                 <a href="https://placeholder.com">
-                  <img src="https://via.placeholder.com/250x350" alt="" />
+                  <img
+                    src="https://via.placeholder.com/250x350"
+                    alt="{ Item.name }"
+                  />
                 </a>
               </div>
               <div className="flexItem2">
                 <div className="productHead">
-                  <h1 key={Item.productid} className="productTitle">
+                  <h3 key={Item.productid} className="productTitle f3">
                     {Item.name}
-                  </h1>
-                  <h1 className="productPrice">£65</h1>
+                  </h3>
+                  <h3 className="productPrice f2">£65</h3>
                   <div className="productMid">
                     <h4>Brand: {Item.brand}</h4>
                     <h4>Colour: {Item.colour}</h4>
@@ -92,7 +95,7 @@ class Product extends Component {
                         </a>
                       ) : null}
                     </div>
-                    <h5>Description:</h5>
+                    <h4>Description:</h4>
                     <p className="pr3">{Item.description}</p>
                     <div className="ProductFoot">
                       <a
