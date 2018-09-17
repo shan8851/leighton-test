@@ -39,7 +39,6 @@ class Product extends Component {
     // Removing featured product from array
 
     let products = newArr.filter(item => item.productid !== "0m8hjmd721");
-    console.log(products);
 
     if (!isLoaded) {
       return <div> Loading...</div>;
@@ -65,24 +64,33 @@ class Product extends Component {
                     <h4>Product ID: {Item.productid}</h4>
                     <div className="f5 b">
                       Size:
-                      <a
-                        className="f6 link dim ph3 pv2 ml3 mb2 dib white bg-light-red"
-                        href="#0"
-                      >
-                        S
-                      </a>
-                      <a
-                        className="f6 link dim ph3 pv2 ml2 mb2 dib white bg-light-red"
-                        href="#0"
-                      >
-                        M
-                      </a>
-                      <a
-                        className="f6 link dim ph3 pv2 ml2 mb2 dib white bg-light-red"
-                        href="#0"
-                      >
-                        L
-                      </a>
+                      {//Check stock
+                      Item.size.small !== 0 ? (
+                        <a
+                          className="f6 link dim ph3 pv2 ml3 mb2 dib white bg-light-red"
+                          href="#0"
+                        >
+                          S
+                        </a>
+                      ) : null}
+                      {//Check stock
+                      Item.size.medium !== 0 ? (
+                        <a
+                          className="f6 link dim ph3 pv2 ml3 mb2 dib white bg-light-red"
+                          href="#0"
+                        >
+                          M
+                        </a>
+                      ) : null}
+                      {//Check stock
+                      Item.size.large !== 0 ? (
+                        <a
+                          className="f6 link dim ph3 pv2 ml3 mb2 dib white bg-light-red"
+                          href="#0"
+                        >
+                          L
+                        </a>
+                      ) : null}
                     </div>
                     <h5>Description:</h5>
                     <p className="pr3">{Item.description}</p>
