@@ -2,7 +2,7 @@
 
 this is a one page application replicating a shopping page, this was actually given to me as a test project for [leighton](https://www.leighton.com/) for a position I was applying for.
 
-I opted to do the test in React and you can see my example live [here](https://amazing-mirzakhani-486d14.netlify.com/)
+I opted to do the test in React and you can see my example live [here](https://amazing-mirzakhani-486d14.netlify.com/), it is styled with **Tachyons**, which I enjoyed using for the most part, but I choose it most of all just to try something different.
 
 Obviously not everything on the site works in terms of nav buttons, pagination etc, it is just there for effect and to replicate design.
 
